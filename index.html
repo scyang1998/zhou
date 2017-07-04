@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.top{
+			border:0px solid red;
+			    width: 960px;
+			height: 60px;
+			background: pink;
+		}
+		.main{
+        margin-top: 55px;
+    width: 80px;
+    border: 1px solid green;
+    background-color: yellow;
+		}
+		.footer{
+			
+		}
+		#table1{
+			border: 1px solid red;
+			width: 400px;
+			height: 400px;
+		}
+		#table1 .tr1{
+			border: 1px solid green;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+	<script type="text/javascript">
+		var msg = "欢迎光临，海尔电器，集团网站";
+		var interval = 300;
+		seq = 0;
+		function scroll(){
+			len = msg.length;
+			window.status = msg.substring(0,seq+1);
+			seq++;
+			if(seq>=len){seq=0};
+			window.setTimeout("scroll();",interval);
+		}
+	</script>
+</head>
+<body onload="scroll()">
+<div class="top">网站logo</div>
+<div class="main">网站主题</div>
+<div class="footer">网站版权信息</div>
+<table id="table1">
+	<tr>
+		<td  class="tr1">yihan</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<input type="submit" vaule="注册">
+</table>
+</body>
+</html>
